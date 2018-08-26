@@ -57,11 +57,9 @@ h1, h2, h3{
 
 .navbar-default .navbar-toggle {
   border: 2px solid white;
-}
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #3498db;
+  &:hover, &:focus {
+    background-color: #3498db;
+  }
 }
 
 // Home Page Styles
