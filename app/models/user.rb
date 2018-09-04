@@ -7,6 +7,8 @@ class User < ApplicationRecord
   belongs_to :plan
   has_one :profile
   
+  #  @pagy, @records = pagy(User, items: 10)
+  
   attr_accessor :stripe_card_token
   # If Pro user passes validations (email, password, etc.),
   # the call Stripe and tell Stripe to set up a subscription

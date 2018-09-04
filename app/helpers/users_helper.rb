@@ -1,3 +1,5 @@
+# include Pagy::Frontend
+
 module UsersHelper
   def job_title_icon
     if @user.profile.job_title == "Developer"
