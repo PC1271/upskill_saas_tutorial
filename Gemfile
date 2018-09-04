@@ -32,7 +32,7 @@ gem 'jbuilder', '2.5.0'
 gem 'bootstrap-sass', '3.3.7'
 
 # Use Devise for user authentication
-gem 'devise', '4.2.0'
+gem 'devise', '~> 4.5'
 
 # Use Font Awesome sass gem for adding icons
 gem 'font-awesome-sass', '4.6.2'
@@ -47,7 +47,10 @@ gem 'stripe', '1.48.0'
 gem 'figaro', '1.1.1'
 
 # Use Paperclip for image upload
-gem 'paperclip', '5.2.0'
+gem 'paperclip', '~> 5.2.0'
+
+# Use Pagy for pagination functionality
+gem 'pagy', '~> 0.19.0'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
