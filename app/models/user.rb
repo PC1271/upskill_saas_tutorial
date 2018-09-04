@@ -7,6 +7,11 @@ class User < ApplicationRecord
   belongs_to :plan
   has_one :profile
   
+  has_many :private_messages, class_name: 'Private::Message'
+  has_many :private_conversations, 
+          foreign_key: :sender_id, 
+          class_name: 'Private::Conversation'
+  
   attr_accessor :stripe_card_token
   # If Pro user passes validations (email, password, etc.),
   # the call Stripe and tell Stripe to set up a subscription
